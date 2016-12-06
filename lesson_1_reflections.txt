@@ -1,0 +1,46 @@
+Caroline spiega come comparare files usando FC, un tool di windows useful for files with thousand rows.
+
+
+Calling:
+--fc firstfile secondfile
+you will get a prompt of all the differencies of the 2 files. 
+Only plain text files.
+having history of a development greatly helps finding bugs in a reasonable time.
+
+-How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+--comparing the 2 files, and looking for common mistakes like typos or more in-depth mistakes in the architecture.
+
+
+Version control can be actuated in several ways. 
+The most basic is saving different files during the development.
+Other forms include history of the file,
+like on wikipedia, google docs, etc.
+
+--How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+- by showing my mistakes and the general evolution of my development
+
+It is better to have versions that reflects actual logical changes.
+eg: fixing a typo and a bug could use 2 different commits, so that changes are more easly understandable. 
+Such updates are called Commits.
+
+--What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
+vs having versions automatically saved, like Google Docs does?
+-pros: great control over workflow and logical history, avoid not working commits. 
+cons: requires user, prone to human error.
+
+--Why do you think some version control systems, like Git, allow saving multiple files in one commit, 
+while others, like Google Docs, treat each file separately?
+-they're built for different scopes: GDocs is a workspace where a single document contains all or mostly all its necessary informations,
+with no relations to other files to properly function. GIT on the other hand take in consideration an environment where every
+file is a part of a bigger structure.
+
+--How can you use the commands git log and git diff to view the history of files?
+- using log will show the entire history of commits. adding --stat will briefly show differencies of the commit from the previous one.
+using git diff id1 id2 compares the 2 commits highlighting differencies.
+
+--How might using version control make you more confident to make changes that could break something?
+- that's because i can revert to previous, stable versions at any time
+
+--Now that you have your workspace set up, what do you want to try using Git for?
+- testing my next project ofc!

@@ -1,0 +1,2 @@
+--What happens when you initialize a repository? Why do you need to do it?
+- git setups the directory creating the .git subdir and architecture for tracking history. It doesnt add tracked files or an initial commit.
