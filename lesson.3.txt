@@ -8,3 +8,11 @@
 -Clone copies a repository from a source on your local. 
 Fork is the same, but on GitHub servers, adding linkback and visibility to the clone. 
 Branch is a copy that can be created inside a repository to modify it without afflicting the original.
+
+pushing\pulling labels different from local but in the same brach, makes git create a branch and then merge automatically. 
+You can pull and create a branch without merging using fetch
+
+origin/master is a label that indicates your local copy of the remote master tip when you last pulled or pushed.
+
+--What is the benefit of having a copy of the last known state of the remote stored locally?
+- You can identify the differencies between your status and the remote status, which can be behind yours or be modified by other users.
