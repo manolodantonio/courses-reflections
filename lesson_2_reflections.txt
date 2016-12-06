@@ -45,3 +45,7 @@ git branch -d (label) : deletes branch label WARNING if branch is not merged bef
 
 --What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 - git does the most of the job merging bits of code that doesn't conflict each other. When conflict arouses, manual merging is necessary.
+
+manual merging: on conflict, subl (filename) to open file and see conflicting lines
+search for HEAD for git added text to show the conflict.
+once solved, back to console add file to staging area and commit to continue merging.
