@@ -13,3 +13,35 @@ git add: add a file from working dir to staging area
 - Staging area is a setup area for git commits, where you can identify what files to commit. 
 It helps separating files, preventing full workdir commits. 
 It's the necessary infrastructure for logic commits. 
+
+
+new concepts:
+it's often useful to compare what is on working area, staging area and commit in repository.
+git diff (no arcguments) : diff between working directory and staging area
+git diff --staged : diff between staging area and commit1 in repository
+git reset --hard : discards changes both in working dir and staging area WARNING not reversible!!
+
+--How can you use the staging area to make sure you have one commit per logical change?
+- add files to the staging area while working, then commit on a logical change.
+
+--What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+- when adding features that could break the functionality of other features, or when testing additional content. Adding a branch makes you able to modify only that branch, keeping the master branch working separately.
+
+--How do the diagrams help you visualize the branch structure?
+- branches can be tricky to keep in mind while multiple of them spread from the master branch. 
+A graphical representation helps having an overview and knowing what commits are unreachable.
+
+new commands:
+
+git show (commit) : diff between commit and its parent
+
+git branch (label) : creates new branch
+git merge branch1 branch2 : joins 2 branches. 
+git merge branch1 : merges branch1 in current branch
+git branch -d (label) : deletes branch label WARNING if branch is not merged before deleting, all the history of the branch becomes unreachable and it will be deleted!
+
+--What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- we end up having a single branch, and history of both branches is mixed together.
+
+--What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+- git does the most of the job merging bits of code that doesn't conflict each other. When conflict arouses, manual merging is necessary.
