@@ -20,3 +20,6 @@ origin/master is a label that indicates your local copy of the remote master tip
 --How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 -The only easier option without using git/hub i can think of is a compartimentalized development 
 where you are supposed to interact with other compartments in classes-style.
+
+--When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+- Changes in master branch directly impact your code. Separate branches can be used to test and then be merged in the master branch.
