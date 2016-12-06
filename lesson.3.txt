@@ -16,3 +16,7 @@ origin/master is a label that indicates your local copy of the remote master tip
 
 --What is the benefit of having a copy of the last known state of the remote stored locally?
 - You can identify the differencies between your status and the remote status, which can be behind yours or be modified by other users.
+
+--How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+-The only easier option without using git/hub i can think of is a compartimentalized development 
+where you are supposed to interact with other compartments in classes-style.
