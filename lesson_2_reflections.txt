@@ -1,2 +1,15 @@
 --What happens when you initialize a repository? Why do you need to do it?
 - git setups the directory creating the .git subdir and architecture for tracking history. It doesnt add tracked files or an initial commit.
+
+New concepts:
+working directory: actual system dir where you work
+staging area: git area where to place files to be committed choosen from working dir
+git init: setups a directory as a git repository
+git status: shows commit status of staging area\working directory
+git add: add a file from working dir to staging area
+
+
+--How is the staging area different from the working directory and the repository? What value do you think it offers?
+- Staging area is a setup area for git commits, where you can identify what files to commit. 
+It helps separating files, preventing full workdir commits. 
+It's the necessary infrastructure for logic commits. 
